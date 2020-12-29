@@ -1,0 +1,7 @@
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-subsystem-linux
+  restart
+ dism /online /enable-feature:virtualmachineplatform /all /norestart
+ dism /online /enable-feature:microsoft-windows-subsystem-linux /all /norestart
+  restart
+ download and install: https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+ wsl --set-default-version 2
