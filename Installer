@@ -1,3 +1,5 @@
+follow these steps manually
+
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-subsystem-linux
   restart
  dism /online /enable-feature:virtualmachineplatform /all /norestart
